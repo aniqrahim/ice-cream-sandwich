@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<!--
+
+█▀▀█ █▀▀▄ ░▀░ █▀▀█ ▒█░▒█ █░░█ █░░█ █░░█ 
+█▄▄█ █░░█ ▀█▀ █░░█ ▒█▀▀█ █░░█ █▀▀█ █░░█ 
+▀░░▀ ▀░░▀ ▀▀▀ ▀▀▀█ ▒█░▒█ ░▀▀▀ ▀░░▀ ░▀▀▀ 
+
+-->
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>aniq.olio</title>
+        <script>
+            function show(shown, hidden) {
+                document.getElementById(shown).style.display='block';
+                document.getElementById(hidden).style.display='none';
+                return false;
+            }
+        </script>
+        <style>
+            @font-face {
+        		font-family: "avenir next bold";
+        		src: url(fonts/avenir-next-bold.otf);
+        		font-style: normal;
+        		font-weight: normal;
+        	}
+
+        	@font-face {
+        		font-family: "avenir next demi";
+        		src: url(fonts/avenir-next-demi.otf);
+        		font-style: normal;
+        		font-weight: normal;
+        	}
+
+        	@font-face {
+        		font-family: "avenir next medium";
+        		src: url(fonts/avenir-next-medium.otf);
+        		font-style: normal;
+        		font-weight: normal;
+        	}
+
+        	html, body {
+            	height: 100%;
+            	margin: 0;
+            	padding: 0;
+            	width: 100%;
+				background-color: #339bb4;
+				font-family: "avenir next bold";
+                overflow: auto;
+			}
+            
+            #container {
+                min-height: 100%;
+                position: relative;
+                overflow: auto;
+                padding-bottom: 0px;
+                position: relative;
+            }
+            
+            #middle {
+                position: sticky;
+                bottom:0;
+                width:100%;
+                height:350px;   /* Height of the footer */
+            }
+            
+            #footer {
+                position:absolute;
+                bottom:0;
+                width:100%;
+                height:70px;   /* Height of the footer */
+            }
+            
+			h6.top { 
+				margin-top: 50px;
+				padding: 0;
+				text-align: center;
+				color: white;
+				font-size: 18px;
+			}
+
+			h1#middle {
+				margin-top: 150px;
+				padding: 0;
+				text-align: center;
+				color: white;
+				font-size: 50px;
+			}
+
+			h6.bottom {
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				color: white;
+				font-size: 18px;
+			}
+
+			h1#aboutme {
+				margin-top: 5px;
+				padding: 0;
+				text-align: center;
+				color: white;
+				font-size: 50px;
+			}
+            
+            #contact {
+                margin-top: 5px;
+                padding: 0;
+                text-align: center;
+                color: white;
+                font-size: 50px;
+            }
+            
+            p#atas {
+                margin-top: 100px;
+            }
+            
+            p {
+                margin-right: 40px;
+                margin-left: 40px;
+                padding: 0;
+                text-align: center;
+                color: white;
+                font-family: "avenir next medium";
+                font-size: 18px;
+            }
+            
+            .typewriter {
+                overflow: hidden; 
+                white-space: nowrap;
+                margin: 0 auto; 
+                animation: 
+                    typing 3.5s steps(40, end),
+                    blink-caret .75s step-end 1.5;
+            }
+
+            @keyframes typing {
+                from { width: 0 }
+                to { width: 100% }
+            }
+
+            @keyframes blink-caret {
+                from, to { border-color: transparent } 
+                50% { border-color: white; }
+            }
+		  </style>
+    
+    </head>
+       <div id="container"> 
+    <body>  
+        <div id="Page1">
+            <a href="#" onclick="return show('Page2','Page1');"><h6 class="top">about me</h6></a>
+            <br>
+            <div id="middle"><h1 class="typewriter" id="middle">aniq rahim</h1></div>
+            <br>
+            <div id="footer"><a href="#" onclick="return show('Page3','Page1');"><h6 class="bottom">contact me</h6></a></div>
+        </div>
+    
+        <div id="Page2" style="display:none">
+            <a href="#" onclick="return show('Page1','Page2');"><h6 class="top">return</h6></a>
+            <h1 class="typewriter" id="aboutme">about me</h1>
+            <p id="atas">muhammad aniq abdul rahim</p>
+            <br>
+            <p>15 years old</p>
+            <br>
+            <p>student</p>
+            <br>
+            <p>in the realm of learning</p>
+        </div>
+
+        <div id="Page3" style="display:none">
+            <a href="#" onclick="return show('Page1','Page3');"><h6 class="top">return</h6></a>
+            <br>
+            <h1 id="contact">this is <a href="https://paste.website/p/c7270f4c-9107-421f-af5a-55fbd230bfd6.txt" id="contact" target="_blank">email.</a></h1>
+            <br>
+            <h1 id="contact">this is <a href="https://github.com/palinganiq" id="contact" target="_blank">github.</a></h1>
+            <br>
+            <h1 id="contact">this is <a href="https://instagram.com/palinganiq" id="contact" target="_blank">instagram.</a></h1>
+            <br>
+            <h1 class="typewriter" id="contact">huhu &copy 2017 x v3.0</h1>
+        </div>
+    </body>
+    </div>
+</html>
